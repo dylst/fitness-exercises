@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
-import { Box, Typography } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
 
 import BodyPart from './BodyPart';
-
-/* Fix scrolling menu */
 
 import RightArrowIcon from '../assets/icons/right-arrow.png';
 import LeftArrowIcon from '../assets/icons/left-arrow.png';
@@ -14,7 +12,7 @@ const LeftArrow = () => {
 
   return (
     <Typography onClick={() => scrollPrev()} className='right-arrow'>
-      <img src={LeftArrowIcon} alt='right-arrow' />
+      <img src={LeftArrowIcon} alt='left-arrow' />
     </Typography>
   );
 };
@@ -29,8 +27,16 @@ const RightArrow = () => {
   );
 };
 
+const Arrows = () => {
+  return (
+    <Stack direction='row' space={2} justifyContent='center'>
+      <LeftArrow /> <RightArrow />
+    </Stack>
+  );
+};
+
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => (
-  <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+  <ScrollMenu Footer={Arrows}>
     {data.map((item) => (
       <Box
         key={item.id || item}

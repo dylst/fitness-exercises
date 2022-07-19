@@ -28,20 +28,10 @@ const Navbar = () => {
         />
       </Link>
       <Stack direction='row' gap='40px' fontSize='24px' alignItems='flex-end'>
-        <Link
-          to='/'
-          style={{
-            textDecoration: 'none',
-            color: '#3a1212',
-            borderBottom: '3px solid #172a3a',
-          }}
-        >
+        <Link to='/' className='navbar-link'>
           Home
         </Link>
-        <a
-          href='#exercises'
-          style={{ textDecoration: 'none', color: '#3a1212' }}
-        >
+        <a href='#exercises' className='navbar-link'>
           Exercises
         </a>
       </Stack>

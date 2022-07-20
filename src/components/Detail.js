@@ -41,16 +41,16 @@ const Detail = ({ exerciseDetail }) => {
           sx={{ fontSize: { lg: '24px', xs: '18px' } }}
           color='#4F4C4C'
         >
-          Exercises keep you strong.{' '}
-          <span style={{ textTransform: 'capitalize' }}>{name}</span> is one of
-          the best <br /> exercises to target your {target}. It will help you
-          improve your <br /> mood and gain energy.
+          The <span style={{ textTransform: 'capitalize' }}>{name}</span> is one
+          of the best <br /> exercises to target your {target}. It will help you
+          strengthen your <span>{bodyPart}</span>, and get swole beyond
+          recognition.
         </Typography>
         {extraDetail.map((item, index) => (
           <Stack key={index} direction='row' gap='24px' alignItems='center'>
             <Button
               sx={{
-                background: '#fff2db',
+                background: '#fdfeff',
                 borderRadius: '50%',
                 width: '100px',
                 height: '100px',

@@ -34,7 +34,7 @@ const Navbar = () => {
         <button
           className='navbar-link-btn'
           onClick={() => {
-            window.scrollTo({ top: 1800, behavior: 'smooth' });
+            window.scrollTo({ top: 1000, left: 0, behavior: 'smooth' });
           }}
         >
           Exercises

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 
-import HeroBannerImage from '../assets/images/banner-sm.jpg';
+import HeroBannerImage from '../assets/images/banner-md.jpg';
 
 const HeroBanner = () => {
   return (
@@ -23,22 +23,21 @@ const HeroBanner = () => {
         }}
         mb='28px'
         mt='30px'
+        textTransform='uppercase'
       >
-        Sweat, Smile <br /> and Repeat
+        Don't Dream <br /> Of It,
+        <span className='hero-banner-text'> Train </span>
+        <br />
+        For It
       </Typography>
-      <Typography
-        fontSize='22px'
-        fontFamily='Alegreya'
-        lineHeight='35px'
-        mb={5}
-      >
-        Check out the most effective exercises
+      <Typography fontSize='22px' lineHeight='35px' mb={5}>
+        What are you waiting for?
       </Typography>
       <Button
         variant='contained'
         sx={{ backgroundColor: '#74B3CE', padding: '10px' }}
         onClick={() => {
-          window.scrollTo({ top: 1800, behavior: 'smooth' });
+          window.scrollTo({ top: 1000, left: 0, behavior: 'smooth' });
         }}
       >
         Explore Exercises
@@ -51,8 +50,9 @@ const HeroBanner = () => {
           display: { lg: 'block', xs: 'none' },
         }}
         fontSize='200px'
+        mt={3}
       >
-        Exercise
+        Get Swole
       </Typography>
       <img src={HeroBannerImage} alt='banner' className='hero-banner-img' />
     </Box>

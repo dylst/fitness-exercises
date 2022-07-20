@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Typography, Button } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 
 import HeroBannerImage from '../assets/images/banner-sm.jpg';
 
@@ -36,8 +36,10 @@ const HeroBanner = () => {
       </Typography>
       <Button
         variant='contained'
-        href='#exercises'
         sx={{ backgroundColor: '#74B3CE', padding: '10px' }}
+        onClick={() => {
+          window.scrollTo({ top: 1800, behavior: 'smooth' });
+        }}
       >
         Explore Exercises
       </Button>

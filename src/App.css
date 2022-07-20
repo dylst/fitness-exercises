@@ -7,20 +7,32 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 ::-webkit-scrollbar {
   width: 0px;
 }
 
-.navbar-link {
+.navbar-link,
+.navbar-link-btn {
   text-decoration: none;
   color: #3a1212;
   transition: 0.1s all ease-in;
 }
 
-.navbar-link:hover {
+.navbar-link-btn {
+  border: none;
+  background-color: transparent;
+  font-family: 'Josefin Sans';
+  font-weight: 500;
+  font-size: 1.4rem;
+  height: 27px;
+  cursor: pointer;
+}
+
+.navbar-link:hover,
+.navbar-link-btn:hover {
   border-bottom: 3px solid #172a3a;
 }
 

@@ -31,9 +31,14 @@ const Navbar = () => {
         <Link to='/' className='navbar-link'>
           Home
         </Link>
-        <a href='#exercises' className='navbar-link'>
+        <button
+          className='navbar-link-btn'
+          onClick={() => {
+            window.scrollTo({ top: 1800, behavior: 'smooth' });
+          }}
+        >
           Exercises
-        </a>
+        </button>
       </Stack>
     </Stack>
   );

@@ -2,6 +2,8 @@
 
 [Live Demo](https://gymwolf.netlify.app/) :point_left:
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/504e749f-37d0-4f2e-8c6f-5264c5b630f6/deploy-status)](https://app.netlify.com/sites/gymwolf/deploys)
+
 ## Description
 
 While at the gym, I always found it cumbersome trying to remember the proper form to a workout when I was first starting out or trying a new exercise. Having to browse around for simply a quick reference took up the limited amount of time that I had at the gym, and trying to find another exercise that used the same equipment wasn't always the best experience. I decided to solve this problem by using my react skills to create this project, which has everything that I would need all in one place.
@@ -15,15 +17,6 @@ This project helped me learn how to:
 - Implement Pagination
 - Make use of NPM React components such as react-horizontal-scrolling-menu
 - Create a responsive UI using Material UI
-
-## Getting started
-
-```
-git clone https://github.com/dylst/fitness-exercises.git
-cd fitness-exercises
-npm install
-npm start
-```
 
 ## Built with
 

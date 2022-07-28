@@ -1,6 +1,6 @@
 # Gymwolf - a Fitness Exercises App
 
-[Live Demo](https://github.com/dylst/) :point_left:
+[Live Demo](https://gymwolf.netlify.app/) :point_left:
 
 ## Description
 
